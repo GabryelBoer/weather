@@ -1,7 +1,7 @@
 import * as C from "./styles";
 import { useSelector } from "react-redux";
 import { useDataSlice } from "../../redux/data/dataSlice";
-import { FaTemperatureHigh, FaTemperatureLow } from 'react-icons/fa'
+import { HiArrowNarrowUp, HiArrowNarrowDown } from 'react-icons/hi'
 
 export const ResultArea = () => {
   const weatherDataG = useSelector(useDataSlice);
@@ -20,16 +20,16 @@ export const ResultArea = () => {
             </C.IconTemp>
 
             <C.MaxMin>
-              <div id="max">
-                <FaTemperatureHigh />{data.main.temp_max?.toFixed(0)}°
+              <div id="max" title="Temperatura máxima">
+                <HiArrowNarrowUp />{data.main.temp_max?.toFixed(0)}°
               </div>
-              <div id="min">
-                <FaTemperatureLow />{data.main.temp_min?.toFixed(0)}°
+              <div id="min" title="Temperatura mínima">
+                <HiArrowNarrowDown />{data.main.temp_min?.toFixed(0)}°
               </div>
             </C.MaxMin>
 
             <C.Temp>        
-              <div id="temp">{data.main.temp?.toFixed(0)}°</div>
+              <div id="temp" title={`${data.main.temp?.toFixed(0)}°C`}>{data.main.temp?.toFixed(0)}°</div>
               <div>|</div>
               <div id="description">{data.weather.description}</div>
             </C.Temp>
