@@ -4,6 +4,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0007;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: #00000075 0px 3px 5px 0px;
   input {
     width: 100%;
     height: 50px;
@@ -14,7 +19,7 @@ export const Container = styled.div`
     background-color: transparent;
     text-align: center;
     color: white;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 10px 0px 0px 10px;
   }
   button {
     display: flex;
@@ -25,7 +30,7 @@ export const Container = styled.div`
     background-color: #525252;
     border-left: 0px;
     color: #fff;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 10px 10px 0px;
     font-size: 25px;
     width: 80px;
     cursor: pointer;
