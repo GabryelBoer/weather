@@ -29,7 +29,7 @@ export const ResultArea = () => {
             </C.MaxMin>
 
             <C.Temp>        
-              <div id="temp" title={`${data.main.temp?.toFixed(0)}°C`}>{data.main.temp?.toFixed(0)}°</div>
+              <div id="temp">{data.main.temp?.toFixed(0)}°</div>
               <div>|</div>
               <div id="description">{data.weather.description}</div>
             </C.Temp>
