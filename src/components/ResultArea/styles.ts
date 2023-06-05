@@ -49,7 +49,7 @@ export const Temp = styled.div`
   #temp {
     font-size: 3.1em;
     font-weight: bolder;
-    padding-top: 5px;
+    padding-top: 10px;
   }
 
   #description::first-letter {
@@ -59,6 +59,5 @@ export const Temp = styled.div`
 
 export const Feels = styled.div`
   font-size: 1.1em;
-  padding-top: 10px;
 `;
 
