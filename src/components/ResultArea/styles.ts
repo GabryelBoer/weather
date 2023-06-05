@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #0007;
+  background-color: rgb(255 255 255 / 80%);
+  color: black;
   padding: 30px;
   width: 100%;
   height: 100%;
   border-radius: 10px;
   box-shadow: #00000075 0px 3px 5px 0px;
+
 `;
 
 export const Region = styled.div`
@@ -22,6 +24,11 @@ export const IconTemp = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px 0px;
+  img {
+    background-color: #728195;
+    border-radius: 50%;
+  }
 `;
 
 export const MaxMin = styled.div`

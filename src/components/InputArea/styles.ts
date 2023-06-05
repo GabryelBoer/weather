@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0007;
+  background-color: rgb(255 255 255 / 80%);
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -18,7 +18,7 @@ export const Container = styled.div`
     outline: 0;
     background-color: transparent;
     text-align: center;
-    color: white;
+    color: black;
     border-radius: 10px 0px 0px 10px;
   }
   button {
