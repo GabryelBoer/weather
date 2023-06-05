@@ -36,6 +36,8 @@ export const MaxMin = styled.div`
   align-items: center;
   gap: 20px;
   font-size: 1.1em;
+  z-index: 10;
+  position: absolute;
 `;
 
 export const Temp = styled.div`
@@ -47,7 +49,7 @@ export const Temp = styled.div`
   #temp {
     font-size: 3.1em;
     font-weight: bolder;
-    line-height: 1em;
+    padding-top: 5px;
   }
 
   #description::first-letter {
